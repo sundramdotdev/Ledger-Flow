@@ -17,13 +17,17 @@ class Transaction extends HiveObject {
   final DateTime date;
 
   @HiveField(4)
-  final bool isExpense;
+  final String category; // e.g. "🛒 Grocery"
+
+  @HiveField(5)
+  final bool isIncome;
 
   Transaction({
     required this.id,
     required this.title,
     required this.amount,
     required this.date,
-    required this.isExpense,
+    required this.category,
+    required this.isIncome,
   });
 }
