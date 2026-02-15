@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 
 import 'models/transaction.dart';
 import 'providers/transaction_provider.dart';
-import 'screens/entry_screen.dart';
+import 'screens/dashboard_screen.dart';
 import 'services/hive_service.dart';
 
 void main() async {
@@ -31,7 +31,7 @@ class LedgerFlowApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           brightness: Brightness.dark,
-          colorSchemeSeed: const Color(0xFF6C63FF), // vibrant indigo
+          colorSchemeSeed: const Color(0xFF40E0D0), // Turquoise
           scaffoldBackgroundColor: const Color(0xFF0D0D0D),
           appBarTheme: const AppBarTheme(
             centerTitle: true,
@@ -51,15 +51,11 @@ class LedgerFlowApp extends StatelessWidget {
               fontWeight: FontWeight.w700,
               letterSpacing: -0.5,
             ),
-            titleMedium: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+            titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
         ),
-        home: const EntryScreen(),
+        home: const DashboardScreen(),
       ),
     );
   }
 }
-
