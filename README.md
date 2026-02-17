@@ -23,6 +23,12 @@ LedgerFlow is a high-performance personal finance management application built w
 - **Utilities**:
   - intl (Date formatting)
   - uuid (Unique identifier generation)
+---
+## Connect With Me
+I am a student developer passionate about building tech that solves real-world problems. Let's connect!
+
+* **GitHub:** [github.com/sundramdotdev](https://github.com/sundramdotdev)
+* **LinkedIn:** [linkedin.com/in/sundramdotdev](https://linkedin.com/in/sundramdotdev)
 
 ## Project Structure
 
